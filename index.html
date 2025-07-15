@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evaluacion_2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <div class="text" id="header-text">Iniciar Sesión</div>
+      <div class="underline"></div>
+    </div>
+
+    <div class="submit-container">
+      <div class="submit" id="button-signup">Regístrate</div>
+      <div class="submit" id="button-login">Iniciar Sesión</div>
+    </div>
+
+    <div class="inputs">
+      <div class="input" id="input-email">
+        <img src="Assets/mail.png" alt="" />
+        <input type="email" placeholder="Correo Electrónico" id="email" />
+        <div class="error-message" id="error-email"></div>
+      </div>
+      <div class="input" id="input-password">
+        <img src="Assets/password.png" alt="" />
+        <input type="password" placeholder="Contraseña" id="contraseña" />
+        <div class="error-message" id="error-contraseña"></div>
+      </div>
+    </div>
+
+    <div class="forgot-password" id="click-version">¿Olvidaste tu contraseña? <span>Click aquí</span></div>
+
+    <div class="submit-container">
+      <div class="submit" id="button-acept">Aceptar</div>
+    </div>
+
+     <div id="contenedor-alerta"></div>
+  </div>
+
+ 
+
+  <script src="validaciones.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Usuarios</title>
+    <link rel="stylesheet" href="stylycrud.css">
+</head>
+<body class="bg-gray-100 h-screen">
+      <h1 class="font-black text-5xl text-center md:w-2/3 mx-auto mt-20">
+          Personal de la Empresa
+      </h1>
+
+      <div class="mt-12 md:flex container mx-auto ">
+          <div class="md:w-1/2 lg:w-2/5 mx-5">
+            <h2 class="font-black text-3xl text-center">Seguimiento de Personal</h2>
+
+            <p class="text-lg mt-5 text-center mb-10">
+                Añade Usuarios y
+                <span class="text-indigo-600 font-bold">Administralos</span>
+            </p>
+
+            <form 
+                id="formulario-registro"
+                class="bg-white shadow-md rounded-lg py-10 px-5 mb-10"
+            >
+                <div class="mb-5">
+                    <label for="nombre" class="block text-gray-700 uppercase font-bold text-sm">
+                        Nombre Usuario:
+                    </label>
+                    <input
+                        class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        type="text"
+                        id="nombre"
+                        placeholder="Nombre"
+                        name="nombre"
+                    />  
+                </div>
+
+                <div class="mb-5">
+                    <label for="apellido" class="block text-gray-700 uppercase font-bold text-sm">
+                        Apellido Usuario:
+                    </label>
+                    <input
+                        class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        type="text"
+                        id="apellido"
+                        placeholder="Apellido"
+                        name="apellido"
+                    />  
+                </div>
+
+                <div class="mb-5">
+                    <label for="rut" class="block text-gray-700 uppercase font-bold text-sm">
+                       Rut Usuario:
+                    </label>
+                    <input
+                        class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        type="text"
+                        id="rut"
+                        placeholder="Rut"
+                        name="rut"
+                    />  
+                </div>
+
+                <div class="mb-5">
+                    <label for="religion" class="block text-gray-700 uppercase font-bold text-sm">
+                        Religion Usuario:
+                    </label>
+                    <input
+                        class="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+                        type="text"
+                        id="religion"
+                        placeholder="Religion"
+                        name="religion"
+                    />  
+                </div>
+
+                <input
+                    type="submit"
+                    class="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors"
+                    value='Registrar Usuarios'
+                />
+              </form>
+          </div>
+
+          <div class="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
+              <h2 class="font-black text-3xl text-center">Listado de Usuarios</h2>
+              <p class="text-xl mt-5 mb-10 text-center">
+                  Administra tus
+                  <span class="text-indigo-600 font-bold ">Usuarios y Registros</span>
+              </p>
+              <div id="registro">
+                  <p class="text-xl mt-5 mb-10 text-center">No Hay Usuarios</p>
+              </div>
+          </div>
+      </div>
+
+      <script src="js/app.js" type="module"></script>
+</body>
+</html>
